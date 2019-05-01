@@ -1,0 +1,22 @@
+SuperMan (추상화)
+-멤버 필드: 우주를 날 수 있나, 높이
+-멤버 메소드: 하늘을 날다, 눈에서 레이저 나온다.
+클래스에서 객체는 new 하나당 하나씩
+
+" . " 은 접근 연산자.
+
+class Student{
+		String name;
+		int age;
+		static int count; // 어디서든 사용 가능한 공공재
+}
+
+s1, s2, s3 객체
+
+
+DB 연결 프로그램
+----------------
+-mySQLClient 프로그램
+-DBeaver 프로그램
+-DataSource Explorer 프로그램
+-Oracle Developer 프로그램
