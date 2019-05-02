@@ -1,0 +1,33 @@
+JDBC
+java -------connector ----- DBMS
+		    (Driver)
+		   	클래스들의 묶음(압축)
+		   	archive(아카이브,압축)
+		   	java archiver(jar)
+		   	
+		   	
+JDBC프로그래밍 순서
+-------------------
+1. 드라이버 설정
+2. DB연결(DB, id, pw)
+3. SQL선택
+4. SQL전송
+-------------
+5.검색결과가 있는 처리
+
+
+1. myphone 이라는 db에
+	product 테이블(id, title, price, company)
+	
+입력받아서 삽입하는 자바 코드 완성
+2.		p100	apple	100	appcom
+		p200	banana	50	bacom	   	
+		
+DB처리 클래스(부품):crud...
+=>멤버 변수 + 멤버 메소드
+
+
+web프로그램, swing프로그램, 콘솔프로그램
+
+
+ port란 하나의 ip로 운영하는 서버가 여러대인 경우 서버를 구분하기 위한 용도로 부가적으로 부여한 번호
