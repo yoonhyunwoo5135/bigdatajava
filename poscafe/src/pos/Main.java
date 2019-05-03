@@ -10,11 +10,16 @@ import java.awt.event.ActionEvent;
 import javax.swing.JToolBar;
 import java.awt.List;
 import javax.swing.JLabel;
+import javax.swing.JComboBox;
+import javax.swing.JTextPane;
+import javax.swing.JMenuBar;
+import javax.swing.JMenu;
+import java.awt.Choice;
+import java.awt.TextField;
+import javax.swing.JTextField;
+import javax.swing.JPanel;
 
 public class Main {
-	private static JTable table1;
-	private static JTable table2;
-	private static JTable table3;
 	
 	public static void main(String[] args) {
 		Main main = new Main();
@@ -27,28 +32,10 @@ public class Main {
 		f1.setSize(1080, 800);
 		f1.getContentPane().setLayout(null);
 		
-		table1 = new JTable();
-		table1.setCellSelectionEnabled(true);
-		table1.setBackground(Color.DARK_GRAY);
-		table1.setBounds(27, 98, 603, 354);
-		f1.getContentPane().add(table1);
-		
-		table2 = new JTable();
-		table2.setBackground(Color.ORANGE);
-		table2.setBounds(27, 98, 603, 354);
-		f1.getContentPane().add(table2);
-		
-		table3 = new JTable();
-		table3.setBackground(Color.GREEN);
-		table3.setBounds(27, 98, 603, 354);
-		f1.getContentPane().add(table3);
-		
 		JButton b1 = new JButton("\uACB0\uC81C");
 		b1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				table1.setVisible(true);
-				table2.setVisible(false);
-				table3.setVisible(false);
+			
 			}//°áÁ¦
 		});
 		b1.setFont(new Font("±¼¸²", Font.BOLD, 26));
@@ -58,9 +45,7 @@ public class Main {
 		JButton b2 = new JButton("\uBA64\uBC84\uC27D");
 		b2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				table1.setVisible(false);
-				table2.setVisible(true);
-				table3.setVisible(false);
+			
 			}//¸â¹ö½±
 		});
 		b2.setFont(new Font("±¼¸²", Font.BOLD, 26));
@@ -70,9 +55,7 @@ public class Main {
 		JButton b3 = new JButton("\uC7AC\uACE0");
 		b3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				table1.setVisible(false);
-				table2.setVisible(false);
-				table3.setVisible(true);
+				
 			}//Àç°í
 		});
 		b3.setFont(new Font("±¼¸²", Font.BOLD, 26));
@@ -85,12 +68,13 @@ public class Main {
 				JLabel la1 = new JLabel(result);
 				la1.setBounds(37, 462, 224, 33);
 				f1.getContentPane().add(la1);
-				f1.setVisible(true);
+				la1.setVisible(true);
 			}
 		});
 		b4.setFont(new Font("±¼¸²", Font.BOLD, 26));
 		b4.setBounds(642, 98, 171, 50);
 		f1.getContentPane().add(b4);
+		
 		
 		
 		
