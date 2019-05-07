@@ -1,0 +1,13 @@
+1차 프로젝트
+------------
+사용자가 프로그램을 접하는 부분 --> 화면
+User Interface(UI)
+GUI(Swing) ----- java처리 ---- DBMS
+						DAO, DTO
+						
+DAO(Data Access Object)
+-CRUD 처리 구현
+-CUD: void형 처리, executeUpdate()
+-R(select): return(ReultSet)형 처리, executeQuery()
+
+heffy127 - 준영이형 github아이디
