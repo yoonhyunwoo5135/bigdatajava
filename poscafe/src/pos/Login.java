@@ -16,9 +16,7 @@ import java.awt.event.ActionEvent;
 public class Login {
 	private static JTextField t1;
 	private static JTextField t2;
-
-	public static void main(String[] args) {
-		
+	public Login() {
 		JFrame f = new JFrame("카페 포스 시스템");
 		f.setBackground(new Color(192, 192, 192));
 		f.getContentPane().setBackground(new Color(0, 153, 255));
@@ -73,7 +71,7 @@ public class Login {
 				String id2 = t1.getText();
 				String pw2 = t2.getText();
 				if(id.equals(id2) && pw.equals(pw2)) {
-					Main main = new Main();
+					Main1 main = new Main1();
 					f.setVisible(false);
 				}
 				else {
@@ -87,8 +85,12 @@ public class Login {
 		
 		f.setVisible(true);
 		
-		
-		
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		Login log = new Login();
 		
 	}
 }
