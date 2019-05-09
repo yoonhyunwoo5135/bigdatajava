@@ -16,7 +16,7 @@ public class Membership {
 		JButton b1 = new JButton("\uB3CC\uC544\uAC00\uAE30");
 		b1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Main1 main = new Main1();
+				Main main = new Main();
 				f.setVisible(false);
 			}
 		});

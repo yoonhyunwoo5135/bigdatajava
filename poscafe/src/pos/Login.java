@@ -71,7 +71,7 @@ public class Login {
 				String id2 = t1.getText();
 				String pw2 = t2.getText();
 				if(id.equals(id2) && pw.equals(pw2)) {
-					Main1 main = new Main1();
+					Main main = new Main();
 					f.setVisible(false);
 				}
 				else {
