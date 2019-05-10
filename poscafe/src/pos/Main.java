@@ -20,6 +20,9 @@ import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableColumnModel;
 
+import inven.Inven;
+import membership.Membership;
+
 public class Main {
 	private static JTable table;
 	static int tableRow = 0;
@@ -37,6 +40,7 @@ public class Main {
 		f1.getContentPane().setFont(new Font("굴림", Font.PLAIN, 19));
 		f1.setSize(1080, 800);
 		f1.getContentPane().setLayout(null);
+		f1.setBounds(400, 200, 1080, 800);
 
 		String[] col = { "번호", "메뉴", "가격", "수량", "쿠폰사용" }; // 열 목록
 
@@ -82,7 +86,6 @@ public class Main {
 		buttonMembership.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				Membership mem = new Membership();
-				f1.setVisible(false);
 			}// 멤버쉽
 		});
 		buttonMembership.setFont(new Font("굴림", Font.BOLD, 20));

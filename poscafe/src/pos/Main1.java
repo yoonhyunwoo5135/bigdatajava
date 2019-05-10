@@ -11,6 +11,10 @@ import javax.swing.JOptionPane;
 import javax.swing.JTable;
 import javax.swing.table.TableColumnModel;
 import javax.swing.table.TableModel;
+
+import inven.Inven;
+import membership.Membership;
+
 import javax.swing.JToggleButton;
 import javax.swing.JComboBox;
 import javax.swing.JTextArea;
