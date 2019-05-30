@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style type="text/css">
+		li{
+			list-style: none;
+			float: left;
+			padding: 15px;
+		}
+		li:nth-child(2n+1) {
+			background: orange;
+		}
+		li:nth-child(2n) {
+			background: red;
+		}
+		li:first-child {
+			border-radius: 10px 0 0 10px;/* 사각형의 모서리를 둥글게 만드는 것. 사각형의 왼쪽 위 부터 시계방향으로 1 2 3 4번 */
+		}
+		li:last-child {
+			border-radius: 0 10px 10px 0;
+		}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li>첫 번째</li>
+			<li>두 번째</li>
+			<li>세 번째</li>
+			<li>네 번째</li>
+			<li>다섯 번째</li>
+			<li>여섯 번째</li>
+			<li>일곱 번째</li>
+		</ul>
+	</body>
+</html>

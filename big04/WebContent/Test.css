@@ -1,0 +1,57 @@
+@charset "UTF-8";
+#total{
+	width: 660px;
+	height: 720px;
+	background: #61DDEC;
+}
+#top{
+	width: 660px;
+	height: 260px;
+	background-image: url(google.PNG);
+}
+#top2{
+	width: 660px;
+	height: 100px;
+	padding-left: 80px;
+}
+#top2 li{
+	list-style: none;
+	float: left;
+	width: 100px;
+	height: 30px;
+	padding-top: 5px;
+}
+#top2 li:nth-child(2n+1) {
+	background: #677AE3;
+	box-shadow: 10px 10px #2B2C34;
+}
+#top2 li:nth-child(2n) {
+	background: #0B2FF8;
+	box-shadow: 10px 10px #2B2C34;
+}
+.t1{
+	text-align: center;
+}
+.t2{
+	width: 200px;
+}
+tr{
+	width: 200px;
+}
+#content{
+	width: 660px;
+	height: 100px;
+}
+#top2 li:first-child {
+	border-radius: 20px 0 0 20px;
+}
+#top2 li:last-child {
+	border-radius: 0 20px 20px 0;
+}
+a:hover {
+	text-decoration: none;
+	font-family: 굴림;
+	font-size: 20px;
+	color: white;
+	font-weight: bold;
+}

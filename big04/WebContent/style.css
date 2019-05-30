@@ -1,0 +1,91 @@
+@charset "UTF-8";
+#total{
+	color: blue;
+	background-image: url(total.png);
+	width: 800px;
+	height: 1500px;
+	font-size: 20px;
+}
+#top{
+	width: 680px;
+	height: 50px;
+	background: pink;
+	
+}
+#top li{
+	list-style: none;
+	float: left;
+	width: 100px;
+	height: 50px;
+	padding-left: 25px;
+	padding-top: 5px;
+	
+}
+
+#top li:nth-child(2n+1) {
+	background: red;
+	box-shadow: 10px gray; 
+}
+#top li:nth-child(2n) {
+	background: lime;
+	box-shadow: 10px gray; 
+}
+#top li:first-child {
+	border-radius: 20px 0 0 20px;
+}
+#top li:last-child {
+	border-radius: 0 20px 20px 0;
+}
+a:hover {
+	text-decoration: none;
+	font-family: 궁서;
+	font-size: 20px;
+	color: white;
+	font-weight: bold;
+}
+#content{
+	padding-top: 50px;
+	width: 800px;
+	height: 300px;
+}
+tr{
+	width: 300px;
+}
+
+.t1{
+	width: 100px;
+	text-align: center;
+}
+.t1:hover{
+	background: lime;
+}
+
+.t2{
+	width: 200px;
+}
+input[type="submit"]:hover{
+	color: black;
+	background: gold;
+	font-family: 궁서;
+	font-size: 30px;
+	font-weight: bold;
+	
+}
+input[type] ="text"{
+	background: gold;
+	font-size: 30px;
+	color: lime;
+}
+
+#top2{
+	top: 200px;
+	right: 5px;
+	position: fixed;
+	width: 200px;
+	height: 150px;
+	background: black;
+	font: 궁서 10px bold;
+	color: yellow;
+	border-bottom: 10px blue;
+	border-radius: 100px 10px;
+}
