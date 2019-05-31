@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	alert("환영합니다.")
+	function call(total, count){/* 1차 계산 금액 */
+		var price = total/count;
+		call2(parseInt(price));
+	}
+	function call2(rep){/* 최종 지불 계산 금액*/
+		if (rep>=3000) {
+			alert("당신이 지불할 금액은" + (rep-300));
+		}
+	}
+   	call(10000, 3);
+</script>
+</head>
+<body>
+
+</body>
+</html>

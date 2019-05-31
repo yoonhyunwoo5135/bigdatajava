@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function send() {
+	var data = document.getElementById("id");//id라는 노드 선택
+	var data2 = data.value; //입력 값 추출
+	var data3 = document.getElementById("pw");
+	var data4 = data3.value;
+	location.href = "js.jsp?id=" + data2 + "&pw=" + data4;		
+	}
+
+</script>
+</head>
+<body>
+	아이디: <input type="text" name="id" id="id"><br>
+	패스워드: <input type="text" name="id" id="pw"><br>
+	<button type="button" onclick="send()">전송</button>
+</body>
+</html>
