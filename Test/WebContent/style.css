@@ -1,0 +1,108 @@
+@charset "UTF-8";
+body{
+	color: blue;
+}
+#all{/* 전체를 감싸는 div */
+	width: 1000px;
+	heigth:2000px;
+	background: yellow;
+	font: 20px;
+}
+#under{
+	width: 1000px;
+	background: yellow;
+}
+#under table{
+	width: 740px;
+	height: 368px;
+}
+#total{
+	width: 1000px;
+}
+#total2{
+	width: 1000px;
+}
+.t5{
+	color: green;
+	padding-top: 10px;
+	vertical-align: middle;/* 가운데 정렬 */
+}
+#top2{
+	margin-left: -40px;/* 위치 조정 */
+	text-align: center;
+}
+#top{
+	width: 600px;
+	height: 100px;
+	background-image: url(title.png); /* 타이틀 이미지 */
+}
+#sidebar{/* 로고 설정 */
+	top: 100px;
+	width: 150px;
+	height: 100px;
+	background-image: url(Logo.png);
+	border-radius: 10px 10px 10px 10px;
+	position: fixed; /* 고정 */
+	left: 40%; /* 위치값 */
+}
+#sidebar2{/* 사이드 이미지 광고 */
+	top: 210px;
+	width: 200px;
+	height: 432px;
+	background-image: url(ad.jpg); 
+	border-radius: 10px 10px 10px 10px; /* 둥글게 */
+	position: fixed;/* 고정 */
+	left: 40%;/* 위치값 */
+}
+
+a:hover{/* 마우스 접촉시  */
+	text-decoration: none;
+	font-family: 굴림;
+	font-size: 20px;
+	color: white;
+	font-weight: bold;;
+}
+#top2 li{
+	list-style: none;
+	font-size: 20px;
+	float: left;
+	width: 150px;
+	height: 50px;
+	font-weight: bold;
+}
+
+#top2 li:nth-child(2n+1) {
+	background: #F262E8;
+	box-shadow: 10px 10px #2B2C34;
+}
+#top2 li:nth-child(2n) {
+	background: #E64852;
+	box-shadow: 10px 10px #2B2C34;
+}
+#top2 li:first-child {
+	border-radius: 20px 0 0 20px;/* 메뉴창 첫부분 앞쪽 둥글게 */
+}
+#top2 li:last-child {
+	border-radius: 0 20px 20px 0;/* 메뉴창 마지막 부분 뒤쪽 둥글게 */
+}
+#content{
+	width: 740px;
+	height: 452px;
+}
+#top3{
+	top: 650px;
+	right: 5px;
+	position: fixed;/* 고정 */
+	width: 200px;
+	height: 150px;
+	background: #F38181;
+	font: 돋움 10px bold;
+	color: white;
+	border-radius: 100px 10px; /* 나뭇잎 모양 */
+	box-shadow: 5px 5px #2B2C34;
+	left: 40%; /* 위치값 */
+}
+#top3 li{
+	list-style: none;
+	padding-left: 15px;/* 위치 조정 */
+}
