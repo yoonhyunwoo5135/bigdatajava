@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <jsp:useBean id="dto" class="bean.BbsDTO"></jsp:useBean>
-<jsp:setProperty property="*" name="dto"/>
+<jsp:setProperty property="*" name="dto"/><!--  -->
 </head>
 <body>
 id: <%=dto.getId() %><br>

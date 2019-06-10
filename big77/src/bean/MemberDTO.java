@@ -6,6 +6,10 @@ public class MemberDTO {
 	private String name;
 	private String tel;
 	
+	public MemberDTO() {
+		
+	}
+	
 	public String getId() {
 		return id;
 	}
@@ -30,5 +34,6 @@ public class MemberDTO {
 	public void setTel(String tel) {
 		this.tel = tel;
 	}
-
+	
+	
 }

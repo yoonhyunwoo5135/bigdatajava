@@ -1,10 +1,11 @@
 package bean;
 
-public class MemberDTO {
+public class AdminDTO {
 	private String id;
 	private String pw;
 	private String name;
 	private String tel;
+	private String gender;
 	
 	public String getId() {
 		return id;
@@ -30,5 +31,15 @@ public class MemberDTO {
 	public void setTel(String tel) {
 		this.tel = tel;
 	}
-
+	public String getGender() {
+		return gender;
+	}
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+	
+	
+	
+	
+	
 }
