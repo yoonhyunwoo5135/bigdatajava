@@ -1,0 +1,33 @@
+MVC1
+src - bean
+webContent - jsp, img, js
+
+MVC2(spring mvc project)
+
+MVC1
+m-> dao
+v-> html
+c-> jsp
+
+spring에서 mvc
+
+m -> java
+v -> jsp
+c -> java
+
+web프로젝트에서 webContent와 같은 역할을 하는건 스프링에서 src-> main-> webapp에 있다
+
+servlet
+서블릿: 
+-서버에서 돌아가는 작은 프로그램
+-웹프로그램을 하기 위한 라이브러리의 묶음
+-HttpServletRequest
+ HttpServletResponse
+ PrintWriter
+-동적 어플리케이션 컴포넌트
+-java확장자
+-클라이언트의 요청에 동적으로 작동하고, 응답은 html을 이용
+
+스프링에서의 설정 방법
+-xml문서로 설정
+-annotation설정
