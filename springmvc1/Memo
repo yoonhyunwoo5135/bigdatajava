@@ -1,0 +1,2 @@
+tomcat이 읽는 순서
+web.xml -> root-context.xml -> servlet-context.xml 
