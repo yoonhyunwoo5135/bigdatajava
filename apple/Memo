@@ -1,0 +1,33 @@
+spring 생성후 순서
+-pom.xml을 연다
+-javaversion을 맞게 바꾼다
+-spring 버전을 맞춘다.
+
+그리고 maven에서 사용할 데이터 베이스의 코드를
+<dependencies>밑에 넣는다
+<dependency>
+         <groupId>mysql</groupId>
+         <artifactId>mysql-connector-java</artifactId>
+         <version>5.1.45</version>
+    	</dependency>
+    	
+form action으로 넘길때 임의로 설정 가능
+
+1.spring 프로젝트 생성 후, 설정 순서.
+	1)pom.xml
+	-pom.xml을 연다
+	-javaversion을 맞게 바꾼다
+	-spring 버전을 맞춘다.
+	- maven에서 사용할 데이터 베이스의 코드를
+	<dependencies>밑에 넣는다
+	2) project facets
+2.mvc2모델의 작동 방식
+	클라이언트가 요청하는 페이지 위치
+	src-> main -> webapp
+	컨트롤러의 위치
+	s
+	rc/main -> com.itbank.mvc01 
+	서버가 결과를 담을 페이지 위치
+	src-> main -> webapp -> web-INF ->views
+3.컨트롤러의 작동 방식
+	
