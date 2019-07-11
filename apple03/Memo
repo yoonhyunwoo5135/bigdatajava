@@ -1,0 +1,26 @@
+클라이언트 요청 -> web-server-> was->
+front-controller-> controller의 해당 메소드 호출->
+서버 쪽 처리 결과를 담을 jsp페이지 호출-> 실행 결과를 다시
+web-server에게 넘김-> 클라이언트 응답
+
+-스프링에서의 resources 처리 방법
+---------------------------
+img, xml, json, html (전부 리소스)
+
+-db처리 방법
+dao구현
+
+DispatcherServlet -> 분배하는 것
+context-param -> 모든 파라메터를 사용 가능
+
+
+설정 파일
+(위부터 순서대로)
+
+pom.xml - 프로젝트 버전 관리, 라이브러리 관리
+web.xml - tomcat이 가장 먼저 읽는 설정 파일,
+		     파라메터 설정, listener설정,
+		  front-controller설정
+root-context.xml - 객체 생성 설정(디자인 패턴: 싱글톤 -> 반대말은 프로토타입)
+servlet-context.xml - front-controller 세부 설정
+						(resources위치, view resolover)

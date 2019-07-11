@@ -1,0 +1,18 @@
+0. spring project의 셋팅 순서
+	먼저 pom.xml에서 버전을 맞춰서 세팅해주고, spring 프로젝트에 속성에 들어가서 tomcat과 연결한다.
+1. Spring MVC2의 구조 그림
+	(MVC가 다 보이게, spring에서의 M,V,C 각각의 위치)
+2. 위 그림의 동작 방식
+3. pom.xml의 역할
+	버전을 설정하고, 라이브러리를 설정해주는 역할이다.
+4. tomcat에서 spring project를 구동시킬 때 읽는 설정 파일들 이름, 순서, 각각의 역할
+	순서는 web.xml -> root-context.xml -> servlet-context.xml 순서로 읽는다
+	web.xml에서는 parameter와 listner, 프론트 컨트롤을 설정한다.
+	root-context에서는 객체 생성을 설정한다.
+	servlet-context는 front-controller의 세부 설정을 한다. (resources위치, view resolover등)
+5. dispatcher servlet의 역할
+	front-controller의 역할로 관리하고 분배해주는 역할이다.
+6. spring에서 사용된 디자인 패턴 2가지
+	싱글톤과 프로토타입이 있다.
+	싱글톤은 하나를 생성해주면 모든 것이 컨트롤 가능한 패턴이고,
+	프로토타입은 계속해서 생성해주면서 컨트롤 하는 패턴이다.
