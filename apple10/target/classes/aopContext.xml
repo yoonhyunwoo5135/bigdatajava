@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
+<!-- 태그: Element(요소) --><!-- <p1>ㅇㅇㅇ</p1> 같은거 -->
+<!-- Empty Elment(빈 요소) --><!-- <br>, <hr> 같은거-->
+<context:component-scan base-package="com.itbank.mvc10"/>
+<bean id="aspect" class="com.itbank.mvc10.AspectClass"></bean>
+
+<aop:config>
+	<!-- 끼워 넣을 위치 검색(핵심 메소드) -->
+	<aop:pointcut expression="execution(* com.itbank.mvc10.ASite.person*(..))" id="person"/>
+	<aop:aspect ref="aspect">
+		<aop:before method="login2" pointcut-ref="person"/>
+		<aop:after method="logout" pointcut-ref="person"/>
+	</aop:aspect>
+</aop:config>
+<aop:config>
+	<aop:pointcut expression="execution(* com.itbank.mvc10.CSite.order*(..))" id="order"/>
+	<aop:pointcut expression="execution(* com.itbank.mvc10.CSite.check*(..))" id="check"/>
+	<aop:aspect ref="aspect">
+		<aop:before method="login2" pointcut-ref="order"/>
+		<aop:after method="logout" pointcut-ref="check"/>
+	</aop:aspect>
+</aop:config>
+<aop:config>
+	<aop:pointcut expression="execution(* com.itbank.mvc10.BSite.order*(..))" id="order2"/>
+	<aop:aspect ref="aspect">
+		<aop:before method="login2" pointcut-ref="order2"/>
+		<aop:after method="logout" pointcut-ref="order2"/>
+	</aop:aspect>
+</aop:config>
+<aop:config>
+	<aop:pointcut expression="execution(* com.itbank.mvc10.BSite2.productF*(..))" id="find"/>
+	<aop:pointcut expression="execution(* com.itbank.mvc10.BSite2.basket*(..))" id="basket"/>
+	<aop:pointcut expression="execution(* com.itbank.mvc10.BSite2.productO*(..))" id="order3"/>
+	<aop:aspect ref="aspect">
+		<aop:before method="login2" pointcut-ref="order3"/>
+		<aop:after method="logout" pointcut-ref="order3"/>
+		<aop:after-returning method="returnCall"
+		pointcut-ref="find"
+		returning="returnObj"/>
+		<aop:after-throwing method="errorCall" pointcut-ref="basket"/>
+		<aop:around method="aroundCall" pointcut-ref="order3"/>
+	</aop:aspect>
+</aop:config>
+
+</beans>
