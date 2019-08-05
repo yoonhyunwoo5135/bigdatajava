@@ -1,4 +1,4 @@
-package com.jin.stat;
+package com.jin.late;
 
 import java.io.IOException;
 import java.util.Iterator;
@@ -13,7 +13,6 @@ import org.apache.hadoop.mapred.Reporter;
 public class Reduce01 extends MapReduceBase
 implements Reducer<Text, IntWritable, Text, IntWritable>{
 	
-	
 	@Override
 	public void reduce(Text key, Iterator<IntWritable> values, OutputCollector<Text, IntWritable> output, Reporter arg3)
 			throws IOException {
@@ -22,8 +21,10 @@ implements Reducer<Text, IntWritable, Text, IntWritable>{
 		while(values.hasNext()) {
 			cnt +=values.next().get();
 		}
-		
-		output.collect(key, new IntWritable(cnt));
+		output.collect(
+				key, 
+				new IntWritable(cnt)
+			);
 	}
 
 }

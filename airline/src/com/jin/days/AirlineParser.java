@@ -1,10 +1,11 @@
-package com.jin.stat;
+package com.jin.days;
 
 import org.apache.hadoop.io.Text;
 
 public class AirlineParser {
 	private int year;
 	private int month;
+	private int day;
 	
 	public AirlineParser() {}
 	
@@ -12,6 +13,7 @@ public class AirlineParser {
 		String [] airData = value.toString().split(",");
 		year = Integer.parseInt(airData[0]);
 	    month = Integer.parseInt(airData[1]);
+	    day = Integer.parseInt(airData[3]);
 	}
 
 	public int getYear() {
@@ -20,7 +22,10 @@ public class AirlineParser {
 
 	public int getMonth() {
 		return month;
-	}	
-	
+	}
+
+	public int getDay() {
+		return day;
+	}
 		
 }
